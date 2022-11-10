@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
     <title>Kerry Shop</title>
   </head>
   <body>
@@ -23,7 +23,10 @@
     <!--Header Section --- -->
     <!-- Sign in section +++ -->
     <div id="Sign_In">
-        <a href=""><i class="fa-solid fa-user fa-xl"></i><p>Sign In / Sign Up</p></a>
+      <a href=""
+        ><i class="fa-solid fa-user fa-xl"></i>
+        <p>Sign In / Sign Up</p></a
+      >
     </div>
     <!-- Sign in section ---  -->
     <!-- search bar -->
@@ -33,15 +36,19 @@
           src="https://images.ctfassets.net/5de70he6op10/7q3Z6vJ6UEPFyAPKAFZZxl/1a22eec777828277571187c43306e983/Anthropologie_Holiday_Lockup__1_update.svg"
           alt=""
         />
-      </div>
-      <div>
         <input type="text" placeholder="Search Products" style="width: 200px" />
-        <i class="fa-solid fa-bag-shopping"></i>
+        <a href="" id="bag"><i class="fa-solid fa-bag-shopping"></i></a>
       </div>
     </div>
 
     <div id="navbar_section">
       <ul class="navbar">
+        <ol class="nav-item">
+          <a href="#">Gifts</a>
+        </ol>
+        <ol class="nav-item">
+          <a href="#">New!</a>
+        </ol>
         <ol class="nav-item">
           <a href="#">Dresses</a>
         </ol>
@@ -68,5 +75,21 @@
         </ol>
       </ul>
     </div>
+    <div id="container">
+      <div id="img">
+        <img src="https://images.ctfassets.net/5de70he6op10/66gBHQY9rlKtf5IItLdMCa/eb48274717871eb64ba75900e042218f/LS_M0_Banner_a.jpg?w=630&q=80&fm=webp" alt="">
+        <img src="https://images.ctfassets.net/5de70he6op10/7FtJ5t3fiV8RM8Q80ufmqS/4b8d59935ecd871b8f0b1055665bbe09/LS_M0_Banner_b.jpg?w=630&q=80&fm=webp" alt="">
+        <img src="https://images.ctfassets.net/5de70he6op10/6Rg6bbVw5EcY8ZFGylD3Lt/52e96081fac4772cbd0e5aabda58219a/LS_M0_Banner_c.jpg?w=630&q=80&fm=webp" alt="">
+        <img src="https://images.ctfassets.net/5de70he6op10/2jP2GsJVfSqC66yrxJJPOX/a4b3ecfc7c2a6de75aa10b764c9cfe9f/LS_M0_Banner_d.jpg?w=630&q=80&fm=webp" alt="">
+      </div>
+      <div id="card"></div>
+      <div id="card1"></div>
+      <div id="card2"></div>
+      <div id="card3"></div>
+      <h2 id="youmay">YOU MAY ALSO LIKE</h2>
+      <div id="card4"></div>
+      
+    </div>
   </body>
 </html>
+<script src="index.js"></script>
