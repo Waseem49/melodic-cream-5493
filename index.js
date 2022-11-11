@@ -56,7 +56,7 @@ getdata1(data1);
 let data2 = [
   {
     img: "https://images.ctfassets.net/5de70he6op10/sElVOkh1LlYRV8lFchscj/3fa66885dac24294a26ad182591b8639/ALiving_HPG_LS_01-1.jpg?w=2640&q=80&fm=webp",
-    price: 50,
+   
   },
 ];
 function getdata2(data2) {
@@ -136,4 +136,42 @@ function getdata4(data4) {
     document.querySelector("#card4").append(div);
   });
 }
-getdata3(data4);
+getdata4(data4);
+
+let data5 = [
+  {
+    img: "https://images.urbndata.com/is/image/Anthropologie/57660680_011_b1?$an-category$&qlt=80&fit=constrain",
+    name:"Jenny You Lowrence Gown"
+  },
+  {
+    img: "https://images.urbndata.com/is/image/Anthropologie/57485781_000_b2?$an-category$&qlt=80&fit=constrain",
+    name:"Foux Pine Garland"
+  },
+  {
+    img: "https://images.urbndata.com/is/image/Anthropologie/67546762_011_b1?$an-category$&qlt=80&fit=constrain",
+    name:"Amour Apholia Skirt"
+  },
+  {
+    img: "https://images.urbndata.com/is/image/Anthropologie/69058378_001_b2?$an-category$&qlt=80&fit=constrain",
+    name:"Bryson Boots"
+  },
+];
+function getdata5(data5) {
+  data5.forEach((ele) => {
+    console.log(data);
+    let div = document.createElement("div");
+
+    let img = document.createElement("img");
+    img.src = ele.img;
+
+    let name=document.createElement("p")
+    name.innerText=ele.name
+
+    let btn = document.createElement("button");
+    btn.innerText = "Shop with kerry";
+
+    div.append(img,name, btn);
+    document.querySelector("#card5").append(div);
+  });
+}
+getdata5(data5);
