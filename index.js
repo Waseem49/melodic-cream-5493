@@ -8,7 +8,7 @@ let data = [
     price: 60,
   },
 ];
-
+let arr=JSON.parse(localStorage.getItem("cart"))
 function getdata(data) {
   data.forEach((ele) => {
     console.log(data);
@@ -55,9 +55,11 @@ function getdata1(data1) {
 getdata1(data1);
 let data2 = [
   {
-    img: "https://images.ctfassets.net/5de70he6op10/sElVOkh1LlYRV8lFchscj/3fa66885dac24294a26ad182591b8639/ALiving_HPG_LS_01-1.jpg?w=2640&q=80&fm=webp",
-   
+    img: "https://images.ctfassets.net/5de70he6op10/75ZPqT2FH1d40ogSLKj1cD/8aa17217c14653cb853d13a31f77ca54/6UP_Tops.jpg?w=856&q=80&fm=webp",
   },
+  {
+    img: "https://images.ctfassets.net/5de70he6op10/6U1u2B6KWtGqFHdH99XgUW/32687a17d03dd1d8926b8f12c81cd7be/6UP_Dresses.jpg?w=856&q=80&fm=webp",
+  }
 ];
 function getdata2(data2) {
   data2.forEach((ele) => {
